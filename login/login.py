@@ -10,12 +10,13 @@ while True:
     opcion = input('ingrese su opcion: ')
     #opciones
     if opcion == '1':
+        print("---- Login ----")
         user = input('Ingrese su usuario: ')
         password = input('Ingrese su contraseña: ')
         #debo llamar la clase y el metodo que se necesita
         ver_dat.validar_usuario_password(user, password)
     elif opcion == '2':
-        print('Registrar usuario:')
+        print('---- Registrar usuario ----')
         user = input('Ingrese su nombre de usuario: ')
         password = input('Ingrese una contraseña: ')
         #TODO: modificar para que solo sea verificado con user - (nota: polimorfismo)
